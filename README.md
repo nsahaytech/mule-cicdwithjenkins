@@ -2,7 +2,7 @@
 This is a sample mule application with maven configuration for deployment to cloudhub
 
 ### Configurations:
-Use mvn clean deploy -Dcloudhubusername="<your cloudhub username>" -Dcloudhubpassword="<your cloudhub password>"
+Use mvn clean deploy -Dcloudhubusername="your cloudhub username" -Dcloudhubpassword="your cloudhub password"
 
 		
 ###
