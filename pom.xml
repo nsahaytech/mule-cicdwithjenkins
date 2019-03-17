@@ -13,8 +13,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		
-		<cloudhub.username>${cloudhubusername}</cloudhub.username>
-		<cloudhub.password>${cloudhubpassword}</cloudhub.password>
+		<cloudhub.username>${anypoint.username}</cloudhub.username>
+		<cloudhub.password>${anypoint.password}</cloudhub.password>
 		
 		<mule.version>3.8.1</mule.version>
 		<mule.tools.version>1.2</mule.tools.version>
@@ -69,13 +69,13 @@
 				<version>2.1.1</version>
 				<configuration>
 					<muleVersion>${mule.version}</muleVersion>
-					<deploymentType>cloudhub</deploymentType>
+					<deploymentType>${deploymentType}</deploymentType>
 					<applicationName>${artifactId}-${version}</applicationName>
 					<username>${cloudhub.username}</username>
 					<password>${cloudhub.password}</password>
-					<workerType>Micro</workerType>
+					<workerType>${workerType}</workerType>
 					<redeploy>true</redeploy>
-					<environment>Sandbox</environment>
+					<environment>${environment}</environment>
 				</configuration>
 				<executions>
 					<execution>
